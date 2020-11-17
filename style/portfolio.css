@@ -12,9 +12,11 @@ body {
 }
 #navbar {
     background-color: #be3144;
+    width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
+    position: fixed;
 
 }
 
@@ -27,6 +29,7 @@ body {
 @media only screen and (min-width: 701px) {
     #navbar {
         justify-content: flex-end;
+
     }
 }
 
@@ -45,7 +48,7 @@ body {
 
 @media only screen and (max-width: 700px) {
     .nav-bar {
-        width: 40%;
+        width: 60%;
     }
 }
 
@@ -104,6 +107,7 @@ h1 {
     #projects {
         height: 270vh;
         max-width: 100%;
+        padding: 0 25px;
     }
 }
 
@@ -140,10 +144,23 @@ h1 {
     background-color: #303841;
     margin-top: 0;
     padding-top: 0;
-    width: 300px;
     height: 350px;
     box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 700px) {
+    .small-box{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .small-box {
+        width: 300px;
+    }
+}
+
+
 
 h3 {
     color: #f0f0f0;
@@ -180,10 +197,20 @@ img {
     justify-content: center;
     padding-top: 50px;
 }
+.project-tile{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 @media only screen and (max-width:700px){
     .project-tile{
         margin-bottom: 20px;
         padding-bottom: 20px;
+    }
+}
+@media only screen and (min-width:701px){
+    .project-tile{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -195,6 +222,7 @@ img {
 @media only screen and (max-width: 700px) {
     .project-subsection {
         height: 1600px;
+        width: 100%;
     }
 }
 
@@ -316,10 +344,21 @@ button:hover {
 #work {
     color: #f0f0f0;
     font-family: "Raleway", sans-serif;
-    font-size: 3.75em;
     padding-top: 50px;
     margin-top: 50px;
 }
+@media only screen and (max-width: 700px){
+    #work{
+        font-size: 3em;
+    }
+    }
+
+@media only screen and (min-width: 701px){
+        #work{
+            font-size: 3.75em;
+ }
+}
+    
 
 #coffee {
     font-family: "Poppins", sans-serif;
@@ -332,8 +371,8 @@ button:hover {
 .contact-subsection {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 60%;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -342,7 +381,19 @@ button:hover {
     color: #f0f0f0;
     font-size: 1.7em;
 }
+@media only screen and (max-width: 700px){
+    .contact-subsection span{
+        font-size: 0.8em;
+        align-items: flex-start;
+    }
+    }
 
+@media only screen and (min-width: 701px){
+    .contact-subsection span{
+            font-size: 1.7em;
+            align-items: center;
+ }
+}
 .con-section {
     display: flex;
     flex-direction: row;
@@ -364,9 +415,21 @@ footer {
     background-color: #303841;
     font-family: "Poppins", sans-serif;
     color: #f0f0f0;
-    font-size: 1.3em;
 }
+@media only screen and (max-width: 700px){
+    footer{
+        font-size: 1em;
+        flex-direction: column;
 
+    }
+    }
+
+@media only screen and (min-width: 701px){
+    footer{
+            font-size: 1.3em;
+            flex-direction: row;
+ }
+}
 #copy {
     padding-left: 40px;
 }
